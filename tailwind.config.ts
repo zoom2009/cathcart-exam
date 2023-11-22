@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/containers/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -12,6 +13,9 @@ const config: Config = {
       'lg': '1920px', // desktop
     },
     extend: {
+      maxWidth: {
+        maximum: '1920px',
+      },
       fontFamily: {
         'roboto': ['var(--font-roboto)'],
       },

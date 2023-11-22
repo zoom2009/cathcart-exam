@@ -1,10 +1,9 @@
 import React from 'react'
+import HomePageContainer from '@/containers/Home'
 
 const Home = () => {
   return (
-    <div className="text-[90px] text-[#E7E7E7]">
-      ATHLETS
-    </div>
+    <HomePageContainer />
   )
 }
 
