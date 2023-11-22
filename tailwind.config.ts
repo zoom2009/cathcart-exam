@@ -7,14 +7,29 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'md': '768px', // tablet
+      'lg': '1920px', // desktop
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'roboto': ['var(--font-roboto)'],
+      },
+      colors: {
+        'primary': '#5E3DB3',
+        'underline-primary': '#603EBE',
+        'underline-light': '#FFF',
+        'dark-primary': '#090C35',
+        'title': '#E7E7E7',
+        'sub-title': '#C2C2C2',
+        'text-dark': '#000',
+        'text-light': '#000',
+        'section-gray': '#F5F4F9',
+        'section': '#FFF',
       },
     },
   },
   plugins: [],
 }
+
 export default config
