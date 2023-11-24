@@ -8,7 +8,7 @@ const PageContainer = (props: IPageContainerProps) => {
   const { children } = props
 
   return (
-    <div className="mx-auto max-w-maximum min-h-screen overflow-y-scroll flex flex-col">
+    <div className="mx-auto max-w-maximum min-h-screen overflow-y-scroll flex flex-col relative">
       {children}
     </div>
   )

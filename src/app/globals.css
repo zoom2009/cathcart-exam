@@ -5,4 +5,5 @@
 * {
   font-family: var(--font-roboto)!important;
   font-weight: 400!important;
+  line-height: normal;
 }

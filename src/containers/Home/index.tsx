@@ -5,10 +5,14 @@ import SubSectionContent from '@/components/SubSectionContent'
 import { tw } from '@/components/tw'
 import { wording } from './constants'
 import { classes } from './styles'
+import Human1 from './views/Human1'
+import Human2 from './views/Human2'
 
 const Home = () => {
   return (
      <PageContainer>
+        <Human1 />
+        <Human2 />
         {/* Section Right */}
         <div className={classes.container}>
           <div className={tw([classes.sectionRight.textContainer, 'mb-[10px]'])}>
