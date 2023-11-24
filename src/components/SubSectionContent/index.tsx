@@ -16,7 +16,7 @@ const SubSectionContent = (props: ISubSectionContentProps) => {
     <div className={classes.container}>
       <div className={classes.titleContainer}>
         <div className={classes.noContainer}>
-          <div className={classes.no}>{no}</div>
+          <div className={classes.no[mode]}>{no}</div>
           <div className={tw([classes.noUnderLine, classes.noUnderLineStyle[mode]])} />
         </div>
         <Label variant="sub-title">{title}</Label>

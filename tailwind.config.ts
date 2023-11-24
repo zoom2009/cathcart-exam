@@ -24,6 +24,7 @@ const config: Config = {
         'underline-primary': '#603EBE',
         'underline-light': '#FFF',
         'dark-primary': '#090C35',
+        'text-dark-primary': '#8F6BE8',
         'title': '#E7E7E7',
         'sub-title': '#C2C2C2',
         'text-dark': '#000',
