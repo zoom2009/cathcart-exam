@@ -21,6 +21,7 @@ export const classes = {
     base: tw([
       `leading-[28px]`,
       `md:text-[18px]`,
+      `min-[1300px]:text-[19px]`,
       `lg:text-[20px]`,
     ]),
     light: tw(`text-black`),

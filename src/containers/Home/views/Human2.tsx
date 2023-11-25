@@ -9,8 +9,9 @@ import PathLine from '@/assets/icons/PathLine'
 const classes = {
   wrapper: tw([
     `absolute z-10`,
-    `md:w-[691px] md:h-[568px] md:bottom-[109px] md:left-[331px]`,
-    `lg:w-[991px] lg:h-[815px] lg:left-[804px] lg:bottom-[59px]`,
+    `md:w-[691px] md:h-[568px] md:-right-[254px] md:bottom-[109px]`,
+    `lg:w-[991px] lg:h-[815px] lg:right-[125px] lg:bottom-[59px]`,
+    `min-[1100px]:right-[9%]`,
   ]),
   container: tw(`relative w-full h-full`),
   image: tw(`absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full shrink-0`),

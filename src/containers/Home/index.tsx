@@ -15,8 +15,10 @@ const Home = () => {
         <Human2 />
         {/* Section Right */}
         <div className={classes.container}>
-          <div className={classes.sectionRight.textContainer}>
-            <Label variant="title">{wording.titleRight}</Label>
+          <div className={classes.titleContainer}>
+            <div className={classes.sectionRight.textContainer}>
+              <Label variant="title">{wording.titleRight}</Label>
+            </div>
           </div>
           <div className={classes.space1} />
           <div className={classes.sectionRight.container}>
