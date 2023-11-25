@@ -15,9 +15,10 @@ const Home = () => {
         <Human2 />
         {/* Section Right */}
         <div className={classes.container}>
-          <div className={tw([classes.sectionRight.textContainer, 'mb-[10px]'])}>
+          <div className={classes.sectionRight.textContainer}>
             <Label variant="title">{wording.titleRight}</Label>
           </div>
+          <div className={classes.space1} />
           <div className={classes.sectionRight.container}>
             <div className={classes.sectionRight.textContainer}>
               <SubSectionContent
@@ -47,13 +48,13 @@ const Home = () => {
             </div>
           </div>
           {/* Section Left */}
-          <div className={tw([classes.sectionLeft.textContainer, 'ml-[321px]'])}>
+          <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px] lg:ml-[321px]'])}>
             <div className={classes.sectionLeft.title}>
               <Label variant="title">{wording.titleLeft}</Label>
             </div>
           </div>
           <div className={classes.sectionLeft.container}>
-            <div className={tw([classes.sectionLeft.textContainer, 'ml-[322px]'])}>
+            <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
               <SubSectionContent
                 no={wording.sectionLeft1.no}
                 title={wording.sectionLeft1.title}
@@ -62,7 +63,7 @@ const Home = () => {
             </div>
           </div>
           <div className={tw([classes.sectionLeft.container, 'bg-section-gray'])}>
-            <div className={tw([classes.sectionLeft.textContainer, 'ml-[322px]'])}>
+            <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
               <SubSectionContent
                 no={wording.sectionLeft2.no}
                 title={wording.sectionLeft2.title}
@@ -71,7 +72,7 @@ const Home = () => {
             </div>
           </div>
           <div className={tw([classes.sectionLeft.container, 'bg-dark-primary'])}>
-            <div className={tw([classes.sectionLeft.textContainer, 'ml-[323px]'])}>
+            <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[323px]'])}>
               <SubSectionContent
                 no={wording.sectionLeft3.no}
                 title={wording.sectionLeft3.title}

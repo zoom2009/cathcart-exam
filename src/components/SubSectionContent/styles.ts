@@ -5,19 +5,24 @@ export const classes = {
   titleContainer: tw(`flex flex-row items-center`),
   noContainer: tw(`flex flex-col items-center justify-center w-[22px] mr-[10px]`),
   no: {
-    light: tw(`text-[18px] tracking-[1.5px] text-center`),
-    dark: tw(`text-[18px] tracking-[1.5px] text-center`),
-    'primary-dark': tw(`text-[18px] tracking-[1.5px] text-center text-text-dark-primary`),
+    base: tw(`text-[18px] tracking-[1.5px] text-center`),
+    light: tw(``),
+    dark: tw(``),
+    'primary-dark': tw(`text-text-dark-primary`),
   },
-  noUnderLine: tw(`h-[5px] w-full rounded-[2.5px]`),
+  noUnderLine: tw(`h-[5px] w-full rounded-[2.5px] mt-[4px]`),
   noUnderLineStyle: {
     light: tw(`bg-underline-primary`),
     dark: tw(`bg-white`),
     'primary-dark': tw(`bg-white`),
   },
   space: tw(`h-[20px]`),
-  desc: tw(`text-[20px] leading-[28px]`),
-  descStyle: {
+  desc: {
+    base: tw([
+      `leading-[28px]`,
+      `md:text-[18px]`,
+      `lg:text-[20px]`,
+    ]),
     light: tw(`text-black`),
     dark: tw(`text-white`),
     'primary-dark': tw(`text-white`),
