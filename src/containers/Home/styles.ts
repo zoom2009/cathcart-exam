@@ -7,10 +7,13 @@ export const classes = {
     `lg:pt-[100px]`,
   ]),
   space1: tw([
+    `h-[251px]`,
     `md:h-[15px]`,
     `lg:h-[10px]`,
   ]),
   titleContainer: tw([
+    `pt-[20px] pl-[20px]`,
+    `md:pt-0 md:pl-0`,
     `min-[1300px]:pr-[10%]`,
     `lg:pr-0`,
   ]),
