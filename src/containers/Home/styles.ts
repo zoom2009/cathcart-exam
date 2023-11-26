@@ -38,21 +38,21 @@ export const classes = {
   },
   sectionLeft: {
     title: tw([
-      `pt-[20px]`,
+      `pt-[20px] pl-[20px]`,
       `md:mt-[50px] md:pt-0 md:pl-0`,
       `min-[1400px]:pl-[10vw]`,
-      `lg:mt-[100px] lg:pl-0`,
+      `lg:mt-[100px] lg:pl-0 lg:mb-[20px]`,
     ]),
     container: tw([
-      `flex flex-col py-[60px] h-[204px]`,
-      `md:py-[30px] md:min-h-0`,
+      `flex flex-col py-[60px] h-[204px] px-[20px]`,
+      `md:p-[30px] md:min-h-0 md:h-auto`,
       `min-[1300px]:py-[50px]`,
       `min-[1400px]:pl-[10vw]`,
       `lg:py-[60px] lg:pl-0`,
     ]),
     textContainer: tw([
-      `w-full px-[20px]`,
-      `md:ml-[30px] md:w-[447px]`,
+      `w-full`,
+      `md:w-[447px]`,
       `min-[1500px]:w-[600px]`,
       `lg:w-[717px] lg:ml-[321px]`,
     ]),
