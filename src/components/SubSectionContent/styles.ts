@@ -28,7 +28,7 @@ export const classes = {
   ]),
   desc: {
     base: tw([
-      `text-[15px] !leading-[18px]`,
+      `text-[15px] leading-[18px]`,
       `md:text-[18px] md:leading-[28px]`,
       `min-[1300px]:text-[19px]`,
       `lg:text-[20px]`,

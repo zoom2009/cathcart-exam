@@ -1,28 +1,38 @@
 "use client"
 
-import React, { memo } from 'react'
+import React, { memo, useCallback } from 'react'
 import Carousel from 'nuka-carousel'
 import { tw } from '@/components/tw'
 
 const classes = {
   displayMobile: tw(`visible md:hidden w-full`),
   displayTabletAndDesktop: tw(`hidden md:flex md:flex-col w-full`),
-  dotsContainer: tw(`absolute bottom-[25px] left-[calc(50%-27px)] flex flex-row w-[54px] items-center justify-between`),
+  dotsContainer: tw(`absolute bottom-[25px] left-[calc(50%-27px)] flex flex-row min-w-[54px] items-center justify-between`),
   dot: tw(`w-[10px] h-[10px] rounded-full bg-dot-in-active`),
   dotActive: tw(`bg-dot-active`),
 }
 
-const renderBottomCenterControls = ({ currentSlide }: { currentSlide: number }) => {
-  return (
-    <div className={classes.dotsContainer}>
-      <div className={tw([classes.dot, currentSlide === 0 && classes.dotActive])} />
-      <div className={tw([classes.dot, currentSlide === 1 && classes.dotActive])} />
-      <div className={tw([classes.dot, currentSlide === 2 && classes.dotActive])} />
-    </div>
-  )
+interface ICarouselWrapperProps {
+  length: number
+  children: React.ReactNode
 }
 
-const CarouselWrapper = (props: { children: React.ReactNode }) => {
+const CarouselWrapper = (props: ICarouselWrapperProps) => {
+  const { children, length } = props
+
+  const renderBottomCenterControls = useCallback(({ currentSlide }: { currentSlide: number }) => {
+    return (
+      <div className={classes.dotsContainer}>
+        {[...Array(length)].map((d, index) => (
+          <div
+            key={`${index}`}
+            className={tw([classes.dot, currentSlide === index && classes.dotActive])}
+          />
+        ))}
+      </div>
+    )
+  }, [children, length])
+
   return (
     <>
       <div className={classes.displayTabletAndDesktop}>

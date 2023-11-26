@@ -11,8 +11,12 @@ export const classes = {
     `md:h-[15px]`,
     `lg:h-[10px]`,
   ]),
+  space2: tw([
+    `h-[220px]`,
+    `md:h-0`,
+  ]),
   titleContainer: tw([
-    `pt-[20px] pl-[20px]`,
+    `pt-[20px]`,
     `md:pt-0 md:pl-0`,
     `min-[1300px]:pr-[10%]`,
     `lg:pr-0`,
@@ -34,19 +38,20 @@ export const classes = {
   },
   sectionLeft: {
     title: tw([
-      `mb-[20px]`,
-      `md:mt-[50px]`,
+      `mb-[20px] pt-[20px]`,
+      `md:mt-[50px] md:pt-0 md:pl-0`,
       `min-[1400px]:pl-[10vw]`,
       `lg:mt-[100px] lg:pl-0`,
     ]),
     container: tw([
-      `flex flex-col w-full`,
+      `flex flex-col pt-[60px] pb-[65px] min-h-[258px]`,
       `md:py-[30px]`,
       `min-[1300px]:py-[50px]`,
       `min-[1400px]:pl-[10vw]`,
       `lg:py-[60px] lg:pl-0`,
     ]),
     textContainer: tw([
+      `w-full px-[20px]`,
       `md:ml-[30px] md:w-[447px]`,
       `min-[1500px]:w-[600px]`,
       `lg:w-[717px]`,

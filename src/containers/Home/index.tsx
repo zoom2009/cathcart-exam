@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </div>
           <div className={classes.space1} />
-          <CarouselWrapper>
+          <CarouselWrapper length={3}>
             <div className={tw([classes.sectionRight.container, 'bg-section-gray md:bg-white'])}>
               <div className={classes.sectionRight.textContainer}>
                 <SubSectionContent
@@ -62,39 +62,51 @@ const Home = () => {
             </div>
           </CarouselWrapper>
           {/* Section Left */}
-          {/* <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px] lg:ml-[321px]'])}>
+          <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px] lg:ml-[321px]'])}>
             <div className={classes.sectionLeft.title}>
               <Label variant="title">{wording.titleLeft}</Label>
             </div>
           </div>
-          <div className={classes.sectionLeft.container}>
-            <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
-              <SubSectionContent
-                no={wording.sectionLeft1.no}
-                title={wording.sectionLeft1.title}
-                desc={wording.sectionLeft1.desc}
-              />
+          <div className={classes.space2} />
+          <CarouselWrapper length={3}>
+            <div className={tw([classes.sectionLeft.container, 'bg-section-gray md:bg-white'])}>
+              <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
+                <SubSectionContent
+                  no={wording.sectionLeft1.no}
+                  title={wording.sectionLeft1.title}
+                  desc={wording.sectionLeft1.desc}
+                />
+              </div>
             </div>
-          </div>
-          <div className={tw([classes.sectionLeft.container, 'bg-section-gray'])}>
-            <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
-              <SubSectionContent
-                no={wording.sectionLeft2.no}
-                title={wording.sectionLeft2.title}
-                desc={wording.sectionLeft2.desc}
-              />
+            <div className={tw([classes.sectionLeft.container, 'bg-section-gray'])}>
+              <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
+                <SubSectionContent
+                  no={wording.sectionLeft2.no}
+                  title={wording.sectionLeft2.title}
+                  desc={wording.sectionLeft2.desc}
+                />
+              </div>
             </div>
-          </div>
-          <div className={tw([classes.sectionLeft.container, 'bg-dark-primary'])}>
-            <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[323px]'])}>
-              <SubSectionContent
-                no={wording.sectionLeft3.no}
-                title={wording.sectionLeft3.title}
-                desc={wording.sectionLeft3.desc}
-                mode="primary-dark"
-              />
+            <div className={tw([classes.sectionLeft.container, 'bg-section-gray md:bg-dark-primary'])}>
+              <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[323px]'])}>
+                <div className="hidden md:flex">
+                  <SubSectionContent
+                    no={wording.sectionLeft3.no}
+                    title={wording.sectionLeft3.title}
+                    desc={wording.sectionLeft3.desc}
+                    mode="primary-dark"
+                  />
+                </div>
+                <div className="flex md:hidden">
+                  <SubSectionContent
+                    no={wording.sectionLeft3.no}
+                    title={wording.sectionLeft3.title}
+                    desc={wording.sectionLeft3.desc}
+                  />
+                </div>
+              </div>
             </div>
-          </div> */}
+          </CarouselWrapper>
         </div>
      </PageContainer>
   )
