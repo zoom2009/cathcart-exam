@@ -35,6 +35,8 @@ const classes = {
     `md:top-[18.98px] md:right-[102.77px]`,
     `lg:hidden`,
   ]),
+  displayMobile: tw(`flex flex-col md:hidden`),
+  displayTabletAndDesktop: tw(`hidden md:flex md:flex-col`),
 }
 
 const Human1 = () => {
@@ -44,10 +46,10 @@ const Human1 = () => {
         <Image src={human1Pic} alt="human1" className={classes.image} />
         <Plus className={classes.plus1} />
         <PlusOutline className={classes.plus2} />
-        <div className="flex flex-col md:hidden">
+        <div className={classes.displayMobile}>
           <PathLineSmall className={classes.pathLine1} />
         </div>
-        <div className="hidden md:flex md:flex-col">
+        <div className={classes.displayTabletAndDesktop}>
           <PathLine className={classes.pathLine1} />
         </div>
       </div>

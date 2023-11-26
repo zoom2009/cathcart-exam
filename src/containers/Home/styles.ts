@@ -19,7 +19,7 @@ export const classes = {
   ]),
   sectionRight: {
     container: tw([
-      `flex flex-col py-[60px]`,
+      `flex flex-col pt-[60px] pb-[65px] min-h-[258px]`,
       `min-[1300px]:pr-[10%] min-[1300px]:py-[50px]`,
       `md:py-[30px]`,
       `lg:pr-0 lg:py-[60px]`,

@@ -31,6 +31,8 @@ const config: Config = {
         'text-light': '#000',
         'section-gray': '#F5F4F9',
         'section': '#FFF',
+        'dot-in-active': '#D8D8D8',
+        'dot-active': '#5C3CAF',
       },
     },
   },
