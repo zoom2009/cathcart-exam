@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React from 'react'
 import PageContainer from '@/components/PageContainer'
 import Label from '@/components/Label'
 import SubSectionContent from '@/components/SubSectionContent'
@@ -13,7 +13,7 @@ const Home = () => {
   return (
      <PageContainer>
         <Human1 />
-        {/* <Human2 /> */}
+        <Human2 />
         {/* Section Right */}
         <div className={classes.container}>
           <div className={classes.titleContainer}>
@@ -62,7 +62,7 @@ const Home = () => {
             </div>
           </CarouselWrapper>
           {/* Section Left */}
-          <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px] lg:ml-[321px]'])}>
+          <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px]'])}>
             <div className={classes.sectionLeft.title}>
               <Label variant="title">{wording.titleLeft}</Label>
             </div>
@@ -70,7 +70,7 @@ const Home = () => {
           <div className={classes.space2} />
           <CarouselWrapper length={3}>
             <div className={tw([classes.sectionLeft.container, 'bg-section-gray md:bg-white'])}>
-              <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
+              <div className={tw(classes.sectionLeft.textContainer)}>
                 <SubSectionContent
                   no={wording.sectionLeft1.no}
                   title={wording.sectionLeft1.title}
@@ -79,7 +79,7 @@ const Home = () => {
               </div>
             </div>
             <div className={tw([classes.sectionLeft.container, 'bg-section-gray'])}>
-              <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[322px]'])}>
+              <div className={tw(classes.sectionLeft.textContainer)}>
                 <SubSectionContent
                   no={wording.sectionLeft2.no}
                   title={wording.sectionLeft2.title}
@@ -88,7 +88,7 @@ const Home = () => {
               </div>
             </div>
             <div className={tw([classes.sectionLeft.container, 'bg-section-gray md:bg-dark-primary'])}>
-              <div className={tw([classes.sectionLeft.textContainer, 'lg:ml-[323px]'])}>
+              <div className={tw(classes.sectionLeft.textContainer)}>
                 <div className="hidden md:flex">
                   <SubSectionContent
                     no={wording.sectionLeft3.no}

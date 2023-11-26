@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-const PathLine = (props: React.SVGProps<SVGSVGElement>) => (
+const PathLine1 = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={268}
@@ -12,4 +12,4 @@ const PathLine = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export default memo(PathLine)
+export default memo(PathLine1)
