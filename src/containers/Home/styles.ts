@@ -19,14 +19,14 @@ export const classes = {
   ]),
   sectionRight: {
     container: tw([
-      `flex flex-col w-full`,
+      `flex flex-col py-[60px]`,
       `min-[1300px]:pr-[10%] min-[1300px]:py-[50px]`,
       `md:py-[30px]`,
       `lg:pr-0 lg:py-[60px]`,
     ]),
     textContainer: tw([
-      `ml-auto`,
-      `md:w-[447px] md:mr-[30px]`,
+      `w-full px-[20px]`,
+      `md:ml-auto md:w-[447px] md:mr-[30px] md:px-0`,
       `min-[1300px]:w-[500px]`,
       `min-[1500px]:w-[600px]`,
       `lg:w-[717px] lg:mr-[195px]`,

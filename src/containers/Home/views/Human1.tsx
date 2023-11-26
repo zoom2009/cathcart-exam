@@ -21,13 +21,13 @@ const classes = {
     `lg:object-none`,
   ]),
   plus1: tw([
-    `absolute top-[20px] left-[4px]`,
-    `md:flex md:right-[281.88px] md:bottom-[696px]`,
+    `absolute bottom-[246px] right-[181px]`,
+    `md:visble md:right-[281.88px] md:bottom-[696px]`,
     `lg:hidden`,
   ]),
   plus2: tw([
     `absolute left-[-18px] top-[11px]`,
-    `md:flex md:left-[197.63px] md:-top-[19px]`,
+    `md:visble md:left-[197.63px] md:-top-[19px]`,
     `lg:hidden`,
   ]),
   pathLine1: tw([
@@ -44,10 +44,10 @@ const Human1 = () => {
         <Image src={human1Pic} alt="human1" className={classes.image} />
         <Plus className={classes.plus1} />
         <PlusOutline className={classes.plus2} />
-        <div className="flex md:hidden">
+        <div className="flex flex-col md:hidden">
           <PathLineSmall className={classes.pathLine1} />
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex md:flex-col">
           <PathLine className={classes.pathLine1} />
         </div>
       </div>

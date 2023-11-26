@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import PageContainer from '@/components/PageContainer'
 import Label from '@/components/Label'
 import SubSectionContent from '@/components/SubSectionContent'
@@ -7,12 +7,13 @@ import { wording } from './constants'
 import { classes } from './styles'
 import Human1 from './views/Human1'
 import Human2 from './views/Human2'
+import CarouselWrapper from './views/CarouselWrapper'
 
 const Home = () => {
   return (
      <PageContainer>
         <Human1 />
-        <Human2 />
+        {/* <Human2 /> */}
         {/* Section Right */}
         <div className={classes.container}>
           <div className={classes.titleContainer}>
@@ -21,36 +22,47 @@ const Home = () => {
             </div>
           </div>
           <div className={classes.space1} />
-          <div className={classes.sectionRight.container}>
-            <div className={classes.sectionRight.textContainer}>
-              <SubSectionContent
-                no={wording.sectionRight1.no}
-                title={wording.sectionRight1.title}
-                desc={wording.sectionRight1.desc}
-              />
+          <CarouselWrapper>
+            <div className={tw([classes.sectionRight.container, 'bg-section-gray md:bg-white'])}>
+              <div className={classes.sectionRight.textContainer}>
+                <SubSectionContent
+                  no={wording.sectionRight1.no}
+                  title={wording.sectionRight1.title}
+                  desc={wording.sectionRight1.desc}
+                />
+              </div>
             </div>
-          </div>
-          <div className={tw([classes.sectionRight.container, 'bg-section-gray'])}>
-            <div className={classes.sectionRight.textContainer}>
-              <SubSectionContent
-                no={wording.sectionRight2.no}
-                title={wording.sectionRight2.title}
-                desc={wording.sectionRight2.desc}
-              />
+            <div className={tw([classes.sectionRight.container, 'bg-section-gray'])}>
+              <div className={classes.sectionRight.textContainer}>
+                <SubSectionContent
+                  no={wording.sectionRight2.no}
+                  title={wording.sectionRight2.title}
+                  desc={wording.sectionRight2.desc}
+                />
+              </div>
             </div>
-          </div>
-          <div className={tw([classes.sectionRight.container, 'bg-primary'])}>
-            <div className={classes.sectionRight.textContainer}>
-              <SubSectionContent
-                no={wording.sectionRight3.no}
-                title={wording.sectionRight3.title}
-                desc={wording.sectionRight3.desc}
-                mode="dark"
-              />
+            <div className={tw([classes.sectionRight.container, 'bg-section-gray md:bg-primary'])}>
+              <div className={classes.sectionRight.textContainer}>
+                <div className="hidden md:flex">
+                  <SubSectionContent
+                    no={wording.sectionRight3.no}
+                    title={wording.sectionRight3.title}
+                    desc={wording.sectionRight3.desc}
+                    mode="dark"
+                  />
+                </div>
+                <div className="flex md:hidden">
+                  <SubSectionContent
+                    no={wording.sectionRight3.no}
+                    title={wording.sectionRight3.title}
+                    desc={wording.sectionRight3.desc}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          </CarouselWrapper>
           {/* Section Left */}
-          <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px] lg:ml-[321px]'])}>
+          {/* <div className={tw([classes.sectionLeft.textContainer, 'md:ml-[30px] lg:ml-[321px]'])}>
             <div className={classes.sectionLeft.title}>
               <Label variant="title">{wording.titleLeft}</Label>
             </div>
@@ -82,7 +94,7 @@ const Home = () => {
                 mode="primary-dark"
               />
             </div>
-          </div>
+          </div> */}
         </div>
      </PageContainer>
   )
