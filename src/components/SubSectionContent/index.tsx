@@ -10,6 +10,7 @@ const SubSectionContent = (props: ISubSectionContentProps) => {
     title,
     desc,
     mode = 'light',
+    customDescClass,
   } = props
 
   return (
@@ -22,7 +23,7 @@ const SubSectionContent = (props: ISubSectionContentProps) => {
         <Label variant="sub-title">{title}</Label>
       </div>
       <div className={classes.space} />
-      <div className={tw([classes.desc.base, classes.desc[mode]])}>
+      <div className={tw([classes.desc.base, classes.desc[mode], customDescClass])}>
         {desc}
       </div>
     </div>

@@ -44,7 +44,7 @@ export const classes = {
       `lg:mt-[100px] lg:pl-0`,
     ]),
     container: tw([
-      `flex flex-col py-[60px] min-h-[217px]`,
+      `flex flex-col py-[60px] h-[204px]`,
       `md:py-[30px] md:min-h-0`,
       `min-[1300px]:py-[50px]`,
       `min-[1400px]:pl-[10vw]`,
@@ -55,6 +55,18 @@ export const classes = {
       `md:ml-[30px] md:w-[447px]`,
       `min-[1500px]:w-[600px]`,
       `lg:w-[717px] lg:ml-[321px]`,
+    ]),
+    moreSpace: tw([
+      `mt-[5px]`,
+      `md:mt-0`,
+    ]),
+    showTabletAndDesktop: tw([
+      `hidden`,
+      `md:flex`,
+    ]),
+    showMobile: tw([
+      `flex`,
+      `md:hidden`,
     ]),
   },
 }

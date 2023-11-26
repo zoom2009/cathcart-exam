@@ -3,4 +3,5 @@ export interface ISubSectionContentProps {
   title: string
   desc: string
   mode?: 'light' | 'dark' | 'primary-dark'
+  customDescClass?: string
 }

@@ -75,6 +75,7 @@ const Home = () => {
                   no={wording.sectionLeft1.no}
                   title={wording.sectionLeft1.title}
                   desc={wording.sectionLeft1.desc}
+                  customDescClass={classes.sectionLeft.moreSpace}
                 />
               </div>
             </div>
@@ -84,12 +85,13 @@ const Home = () => {
                   no={wording.sectionLeft2.no}
                   title={wording.sectionLeft2.title}
                   desc={wording.sectionLeft2.desc}
+                  customDescClass={classes.sectionLeft.moreSpace}
                 />
               </div>
             </div>
             <div className={tw([classes.sectionLeft.container, 'bg-section-gray md:bg-dark-primary'])}>
               <div className={tw(classes.sectionLeft.textContainer)}>
-                <div className="hidden md:flex">
+                <div className={classes.sectionLeft.showTabletAndDesktop}>
                   <SubSectionContent
                     no={wording.sectionLeft3.no}
                     title={wording.sectionLeft3.title}
@@ -97,11 +99,12 @@ const Home = () => {
                     mode="primary-dark"
                   />
                 </div>
-                <div className="flex md:hidden">
+                <div className={classes.sectionLeft.showMobile}>
                   <SubSectionContent
                     no={wording.sectionLeft3.no}
                     title={wording.sectionLeft3.title}
                     desc={wording.sectionLeft3.desc}
+                    customDescClass={classes.sectionLeft.moreSpace}
                   />
                 </div>
               </div>

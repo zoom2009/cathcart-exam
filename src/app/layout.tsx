@@ -9,7 +9,7 @@ const robotoFont = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'Cath-Cart test',
+  title: 'Cathcart Exam',
   description: 'created by sikarin poonsawat',
 }
 
